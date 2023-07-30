@@ -1,0 +1,133 @@
+/* Adoption d'une philosophie mobile first */
+/* Mini reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+
+    display: grid;
+    grid-template-rows: auto 2fr auto;
+    background-image: url("../images/collage-fond-film.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+:root {
+    --primary: rgb(223, 95, 30);
+    --light: rgb(247, 247, 247);
+    --white: rgb(255, 255, 255);
+    --dark: rgb(0, 0, 0);
+    --danger: rgb(127, 7, 7);
+    --success: rgb(0, 128, 0)
+}
+
+nav {
+    background-color: var(--primary);
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+}
+
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.container {
+    margin: 10px 20px;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    color: white;
+}
+
+
+.create-button-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: .5rem;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.form-container form {
+    background-color: var(--white);
+    padding: 2rem;
+    width: 90%;
+    box-shadow: 0px 0px 10px var(--dark);
+}
+
+.form-container .form-group {
+    margin: 1rem 0rem;
+}
+
+.form-container .form-control {
+    display: block;
+    width: 100%;
+}
+
+
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    color: var(--white);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+}
+
+
+
+/* ----------------------------------Tablet----------------- */
+
+@media screen and (min-width: 768px) {
+
+    .form-container form {
+        width: 60%;
+    }
+}
+
+/* ----------------------------------PC----------------- */
+
+@media screen and (min-width: 900px) {
+
+    .form-container form {
+        width: 30%;
+    }
+}
