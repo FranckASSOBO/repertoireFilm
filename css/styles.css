@@ -17,7 +17,7 @@ body {
 
     display: grid;
     grid-template-rows: auto 2fr auto;
-    background-image: url("../images/collage-fond-film.jpg");
+    background-image: url("../images/back6.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
