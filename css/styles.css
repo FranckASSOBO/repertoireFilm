@@ -6,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Kalam', cursive;
+
 }
 
 
@@ -41,6 +42,8 @@ nav {
 
 }
 
+
+
 .container-fluid {
     background-color: var(--primary);
 }
@@ -49,8 +52,14 @@ nav {
 nav a {
     color: var(--white);
     text-decoration: none;
-    font-size: 30px;
+    font-size: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-decoration: center;
 }
+
+
 
 .container {
     margin: 10px 20px;
@@ -118,6 +127,16 @@ footer {
     color: var(--white);
     padding-top: .5rem;
     padding-bottom: .5rem;
+
+}
+
+.alert {
+    padding: 20px;
+}
+
+.alert-danger {
+    background-color: var(--danger);
+    color: white;
 
 }
 
